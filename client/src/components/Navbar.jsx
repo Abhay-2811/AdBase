@@ -15,7 +15,7 @@ function Navbar() {
             <a href=''>Explore</a>
           </li>
           <li>
-            <a href='/post'>PostADS</a>
+            <a href='/advertise'>PostADS</a>
           </li>
         </ul>
       </div>

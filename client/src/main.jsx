@@ -6,6 +6,7 @@ import Home from './components/Home.jsx';
 import Navbar from './components/Navbar.jsx';
 import {createBrowserRouter,RouterProvider,createRoutesFromElements} from 'react-router-dom'
 import { Route } from 'react-router-dom'
+import Advertise from './components/Advertise.jsx';
 import Post from './components/Post.jsx';
 
 
@@ -13,7 +14,7 @@ const router=createBrowserRouter(
   createRoutesFromElements(
     <Route>
     <Route path='/' element={<Home/>}/>
-    <Route path='/post' element={<Post/>}/>
+    <Route path='/advertise' element={<Advertise/>}/>
     </Route>
   )
 )

@@ -1,53 +1,99 @@
 import React from 'react'
+import { useState } from 'react';
 
 function Post() {
-  return (
-    <div>
-     
-    <div className='flex flex-col items-center bg-white pb-[50px]'>
-  
-
-    <div className='flex gap-x-12 mt-[60px]'>
-      <div className="flex items-center ps-4 border border-transparent rounded  bg-purple-400 ">
-        <input
-          id="bordered-radio-1"
-          type="radio"
-          value="rent"
-          name="bordered-radio"
-          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-          
-        />
-        <label
-          htmlFor="bordered-radio-1"
-          className="w-full py-4 ms-2 text-lg font-medium text-black font-bold"
-        >
-          Live ADS
-        </label>
-      </div>
-      <div className="flex items-center ps-4 border border-transparent rounded  bg-purple-400 ">
-        <input
-          id="bordered-radio-2"
-          type="radio"
-          value="need"
-          name="bordered-radio"
-          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-       
-        />
-        <label
-          htmlFor="bordered-radio-2"
-          className="w-full py-4 ms-2 text-lg font-medium text-black font-bold"
-        >
-          Post ADS
-        </label>
-      </div>
-    </div>
-
-    <div className=''>
+    const [formData, setFormData] = useState({
+        name: '',
+        region: '',
+        price: '',
+        file: null,
+      });
     
-    </div>
-  </div>
-    </div>
-  )
+      // Handler for form field changes
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+          ...formData,
+          [name]: value,
+        });
+      };
+    
+      // Handler for file input change
+      const handleFileChange = (e) => {
+        const file = e.target.files[0];
+        setFormData({
+          ...formData,
+          file: file,
+        });
+      };
+    
+      // Handler for form submission
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission logic here
+        console.log(formData);
+      };
+    
+      return (
+        <div className='bg-white flex flex-col justify-center mt-[30px]'>
+          <div className=''>
+
+            <h1 className='text-slate-900 flex justify-center text-2xl font-bold mt-[20px] '>
+            Fill box to post AD's
+            </h1>
+          </div>
+    
+       <div className='flex flex-col border border-4 border-transparent rounded-xl items-center mt-[40px] bg-blue-100 mx-[50px] mx-auto
+          shadow-lg shadow-pink-500 '>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
+                className='mt-[20px] border border-2 border-transparent px-[10px] text-black bg-blue-300 font-semibold'
+              />
+              <br />
+              <input
+                type="text"
+                name="region"
+                placeholder="Region"
+                value={formData.region}
+                onChange={handleChange}
+                className='mt-[20px] border border-2 border-transparent px-[10px] text-black bg-blue-300 font-semibold'
+              />
+              <br />
+        
+              <input
+                type="text"
+                name="price"
+                placeholder="Price in USDT"
+                value={formData.price}
+                onChange={handleChange}
+                className='mt-[20px] border border-2 border-transparent px-[10px] text-black bg-blue-300 font-semibold'
+              />
+              <br />
+              <input
+                type="file"
+                name="file"
+                onChange={handleFileChange}
+                className='mt-[20px] border border-2 border-transparent px-[10px]'
+              />
+              <br />
+              {formData.file && (
+                <img src={URL.createObjectURL(formData.file)} alt="Uploaded File" style={{ maxWidth: '200px', marginTop: '10px' }} />
+              )}
+              <br />
+              <button type="submit" className='mt-[20px] border border-4  px-[10px] py-[5px] rounded-xl font-semibold mb-[20px]
+              text-white bg-blue-600 border-transparent'>
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      );
+
 }
 
 export default Post
