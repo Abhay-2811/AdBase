@@ -1,6 +1,11 @@
 import React from 'react'
+import { BlackCreateWalletButton } from '../BlackCreateWalletButton'
+import { CoinbaseWalletLogo } from '../CoinbaseWalletLogo'
 
 function Navbar() {
+
+
+
   return (
     <navbar >
     <div className='flex flex-row mx-auto px-[30px] py-[20px] justify-between bg-slate-900 mt-[0px]'>
@@ -19,10 +24,12 @@ function Navbar() {
           </li>
         </ul>
       </div>
-        <h1 className='text-white'>Connect</h1>
+       <BlackCreateWalletButton/>
     </div>
   </navbar>
   )
 }
 
 export default Navbar
+
+// <h1 className='text-white'>coinbaseWallet</h1>
