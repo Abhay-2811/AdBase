@@ -34,9 +34,9 @@ function Post() {
   };
 
   return (
-    <div className='bg-white flex flex-col justify-center mt-[30px]'>
+    <div className='bg-white flex flex-col justify-center  bg-gradient-to-r from-purple-900 via-black to-black h-screen'>
       <div className=''>
-        <h1 className='text-slate-900 flex justify-center text-2xl font-bold mt-[20px]'>
+        <h1 className='text-white flex justify-center text-2xl font-bold mt-[20px]'>
           Fill box to post AD's
         </h1>
       </div>

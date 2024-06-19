@@ -4,6 +4,7 @@ import { useState } from 'react'
 import App from './App.jsx'
 import './index.css'
 import Home from './components/Home.jsx';
+import Create from './components/Create.jsx'
 import Navbar from './components/Navbar.jsx';
 import { createBrowserRouter, RouterProvider, createRoutesFromElements } from 'react-router-dom'
 import { Route } from 'react-router-dom'
@@ -21,7 +22,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path='/' element={<Home />} />
-      <Route path='/advertise' element={<Advertise />} />
+      <Route path='/post' element={<Post/>}/>
+      <Route path='/create' element={<Create/>}/>
     </Route>
   )
 )
