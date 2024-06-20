@@ -7,7 +7,7 @@ function Home() {
     <div className='flex  items-center justify-end px-[100px] py-[30px]'>
  
 
-     <button className='border border-2 border-pink-400 px-[20px] py-[7px] text-xl font-semibold
+     <button className='border border-2 border-blue-500 px-[20px] py-[7px] text-xl font-semibold
      rounded-lg bg-gradient-to-r from-purple-900 via-black to-black text-white'>
      <a href='/create'> + Add Campaign</a></button>
     

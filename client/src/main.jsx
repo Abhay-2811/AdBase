@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider, createRoutesFromElements } from 'r
 import { Route } from 'react-router-dom'
 import Advertise from './components/Advertise.jsx';
 import Post from './components/Post.jsx';
+import LandingPage from './components/LandingPage.jsx'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 // Assuming WagmiProvider and config are imported correctly
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<Home />} />
       <Route path='/post' element={<Post/>}/>
       <Route path='/create' element={<Create/>}/>
+      <Route path='/landing' element={<LandingPage/>}/>
     </Route>
   )
 )
