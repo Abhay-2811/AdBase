@@ -34,7 +34,7 @@ function Create() {
   };
 
   return (
-    <div className='bg-gradient-to-r from-purple-900 via-black to-black h-screen '>
+    <div className='bg-black h-screen '>
       <form className='flex flex-col ml-40 mr-40 my-5 dark mb-10 py-[50px]' onSubmit={handleSubmit}>
         <div className='relative z-0 w-full mb-6 group'>
           <input
