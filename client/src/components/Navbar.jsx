@@ -17,7 +17,7 @@ bg-black '>
         <BlackCreateWalletButton />
       </div>
     </div>
-    <hr className='border-t-2 border-blue-400 mt-4' />
+    <hr className='border-t-4 border-purple-600 ' />
   </navbar>
   
   )
