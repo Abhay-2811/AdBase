@@ -7,10 +7,7 @@ const AdContext = createContext();
 
 export const AdWrapper = ({ region, children }) => {
   const { address, isConnected } = useAccount();
-  if (address) {
-    console.log(address);
-  }
-
+  
   const context_value = {
     region,
     address

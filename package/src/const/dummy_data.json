@@ -1,0 +1,1002 @@
+[
+  {
+    "campaign_name": "C1",
+    "region": "region-1",
+    "spending_limit": 100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C2",
+    "region": "region-2",
+    "spending_limit": 200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C3",
+    "region": "region-3",
+    "spending_limit": 300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C4",
+    "region": "region-4",
+    "spending_limit": 400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C5",
+    "region": "region-5",
+    "spending_limit": 500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C6",
+    "region": "region-6",
+    "spending_limit": 600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C7",
+    "region": "region-7",
+    "spending_limit": 700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C8",
+    "region": "region-8",
+    "spending_limit": 800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C9",
+    "region": "region-9",
+    "spending_limit": 900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C10",
+    "region": "region-10",
+    "spending_limit": 1000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C11",
+    "region": "region-11",
+    "spending_limit": 1100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C12",
+    "region": "region-12",
+    "spending_limit": 1200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C13",
+    "region": "region-13",
+    "spending_limit": 1300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C14",
+    "region": "region-14",
+    "spending_limit": 1400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C15",
+    "region": "region-15",
+    "spending_limit": 1500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C16",
+    "region": "region-16",
+    "spending_limit": 1600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C17",
+    "region": "region-17",
+    "spending_limit": 1700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C18",
+    "region": "region-18",
+    "spending_limit": 1800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C19",
+    "region": "region-19",
+    "spending_limit": 1900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C20",
+    "region": "region-20",
+    "spending_limit": 2000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C21",
+    "region": "region-21",
+    "spending_limit": 2100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C22",
+    "region": "region-22",
+    "spending_limit": 2200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C23",
+    "region": "region-23",
+    "spending_limit": 2300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C24",
+    "region": "region-24",
+    "spending_limit": 2400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C25",
+    "region": "region-25",
+    "spending_limit": 2500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C26",
+    "region": "region-26",
+    "spending_limit": 2600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C27",
+    "region": "region-27",
+    "spending_limit": 2700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C28",
+    "region": "region-28",
+    "spending_limit": 2800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C29",
+    "region": "region-29",
+    "spending_limit": 2900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C30",
+    "region": "region-30",
+    "spending_limit": 3000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C31",
+    "region": "region-31",
+    "spending_limit": 3100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C32",
+    "region": "region-32",
+    "spending_limit": 3200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C33",
+    "region": "region-33",
+    "spending_limit": 3300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C34",
+    "region": "region-34",
+    "spending_limit": 3400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C35",
+    "region": "region-35",
+    "spending_limit": 3500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C36",
+    "region": "region-36",
+    "spending_limit": 3600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C37",
+    "region": "region-37",
+    "spending_limit": 3700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C38",
+    "region": "region-38",
+    "spending_limit": 3800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C39",
+    "region": "region-39",
+    "spending_limit": 3900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C40",
+    "region": "region-40",
+    "spending_limit": 4000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C41",
+    "region": "region-41",
+    "spending_limit": 4100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C42",
+    "region": "region-42",
+    "spending_limit": 4200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C43",
+    "region": "region-43",
+    "spending_limit": 4300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C44",
+    "region": "region-44",
+    "spending_limit": 4400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C45",
+    "region": "region-45",
+    "spending_limit": 4500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C46",
+    "region": "region-46",
+    "spending_limit": 4600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C47",
+    "region": "region-47",
+    "spending_limit": 4700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C48",
+    "region": "region-48",
+    "spending_limit": 4800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C49",
+    "region": "region-49",
+    "spending_limit": 4900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C50",
+    "region": "region-50",
+    "spending_limit": 5000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C51",
+    "region": "region-51",
+    "spending_limit": 5100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C52",
+    "region": "region-52",
+    "spending_limit": 5200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C53",
+    "region": "region-53",
+    "spending_limit": 5300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C54",
+    "region": "region-54",
+    "spending_limit": 5400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C55",
+    "region": "region-55",
+    "spending_limit": 5500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C56",
+    "region": "region-56",
+    "spending_limit": 5600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C57",
+    "region": "region-57",
+    "spending_limit": 5700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C58",
+    "region": "region-58",
+    "spending_limit": 5800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C59",
+    "region": "region-59",
+    "spending_limit": 5900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C60",
+    "region": "region-60",
+    "spending_limit": 6000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C61",
+    "region": "region-61",
+    "spending_limit": 6100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C62",
+    "region": "region-62",
+    "spending_limit": 6200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C63",
+    "region": "region-63",
+    "spending_limit": 6300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C64",
+    "region": "region-64",
+    "spending_limit": 6400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C65",
+    "region": "region-65",
+    "spending_limit": 6500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C66",
+    "region": "region-66",
+    "spending_limit": 6600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C67",
+    "region": "region-67",
+    "spending_limit": 6700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C68",
+    "region": "region-68",
+    "spending_limit": 6800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C69",
+    "region": "region-69",
+    "spending_limit": 6900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C70",
+    "region": "region-70",
+    "spending_limit": 7000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C71",
+    "region": "region-71",
+    "spending_limit": 7100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C72",
+    "region": "region-72",
+    "spending_limit": 7200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C73",
+    "region": "region-73",
+    "spending_limit": 7300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C74",
+    "region": "region-74",
+    "spending_limit": 7400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C75",
+    "region": "region-75",
+    "spending_limit": 7500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C76",
+    "region": "region-76",
+    "spending_limit": 7600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C77",
+    "region": "region-77",
+    "spending_limit": 7700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C78",
+    "region": "region-78",
+    "spending_limit": 7800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C79",
+    "region": "region-79",
+    "spending_limit": 7900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C80",
+    "region": "region-80",
+    "spending_limit": 8000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C81",
+    "region": "region-81",
+    "spending_limit": 8100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C82",
+    "region": "region-82",
+    "spending_limit": 8200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C83",
+    "region": "region-83",
+    "spending_limit": 8300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C84",
+    "region": "region-84",
+    "spending_limit": 8400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C85",
+    "region": "region-85",
+    "spending_limit": 8500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C86",
+    "region": "region-86",
+    "spending_limit": 8600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C87",
+    "region": "region-87",
+    "spending_limit": 8700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C88",
+    "region": "region-88",
+    "spending_limit": 8800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C89",
+    "region": "region-89",
+    "spending_limit": 8900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C90",
+    "region": "region-90",
+    "spending_limit": 9000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C91",
+    "region": "region-91",
+    "spending_limit": 9100,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C92",
+    "region": "region-92",
+    "spending_limit": 9200,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C93",
+    "region": "region-93",
+    "spending_limit": 9300,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C94",
+    "region": "region-94",
+    "spending_limit": 9400,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C95",
+    "region": "region-95",
+    "spending_limit": 9500,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C96",
+    "region": "region-96",
+    "spending_limit": 9600,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C97",
+    "region": "region-97",
+    "spending_limit": 9700,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C98",
+    "region": "region-98",
+    "spending_limit": 9800,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C99",
+    "region": "region-99",
+    "spending_limit": 9900,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  },
+  {
+    "campaign_name": "C100",
+    "region": "region-100",
+    "spending_limit": 10000,
+    "ads": [
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Nha",
+      "QmRKnvqvpFzLjEoeeNNGHtc7H8fCn9TvNWHFnbBHkK8Mhy"
+    ]
+  }
+]

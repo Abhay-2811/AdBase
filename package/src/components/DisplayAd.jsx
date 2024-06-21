@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
-const DisplayAd = () => {
+const DisplayAd = ({width}) => {
+  // const adData
   return (
     <div>DisplayAd</div>
   )
