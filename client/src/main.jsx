@@ -8,9 +8,7 @@ import Create from './components/Create.jsx'
 import Navbar from './components/Navbar.jsx';
 import { createBrowserRouter, RouterProvider, createRoutesFromElements } from 'react-router-dom'
 import { Route } from 'react-router-dom'
-import Advertise from './components/Advertise.jsx';
-import Post from './components/Post.jsx';
-import LandingPage from './components/LandingPage.jsx'
+import Landing from './components/Landing.jsx'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 // Assuming WagmiProvider and config are imported correctly
@@ -23,9 +21,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path='/' element={<Home />} />
-      <Route path='/post' element={<Post/>}/>
       <Route path='/create' element={<Create/>}/>
-      <Route path='/landing' element={<LandingPage/>}/>
+      <Route path='/landing' element={<Landing/>}/>
     </Route>
   )
 )

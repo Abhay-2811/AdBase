@@ -34,7 +34,8 @@ function Create() {
   };
 
   return (
-    <div className='bg-gradient-to-r from-purple-900 via-black to-black h-screen '>
+    <div className='mt-[-20px]'>
+    <div className='bg-black h-screen '>
       <form className='flex flex-col ml-40 mr-40 my-5 dark mb-10 py-[50px]' onSubmit={handleSubmit}>
         <div className='relative z-0 w-full mb-6 group'>
           <input
@@ -106,8 +107,8 @@ function Create() {
           </li>
         </div>
 
-        <div className='p-4 mb-4 text-sm rounded-lg bg-blue-300 w-auto text-black' role='alert'>
-          <span className='font-medium text-red-400'>
+        <div className='p-4 mb-4 text-sm rounded-lg bg-purple-600 w-auto text-white' role='alert'>
+          <span className='font-medium text-red-600'>
             <b>Warning!</b>
           </span>{' '}
           The above spending limit is for one time/single campaign 🤯 😎
@@ -135,12 +136,13 @@ function Create() {
         </div>
 
         <button
-          className='text-white mt-6 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-[30%] sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+          className='text-white mt-6 bg-purple-600 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-600 font-medium rounded-lg text-sm w-[30%] sm:w-auto px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-blue-800'
           type='submit'
         >
           Start Campaign by clicking
         </button>
       </form>
+    </div>
     </div>
   );
 }
