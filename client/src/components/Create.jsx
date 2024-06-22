@@ -161,7 +161,7 @@ function Create() {
           )}
 
           <button
-            className='text-white mt-6 bg-purple-600 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-600 font-medium rounded-lg text-sm w-[30%] sm:w-auto px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-blue-800'
+            className='text-white mt-6 bg-purple-600 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-600 font-medium rounded-lg text-sm  mx-auto px-10 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-600 dark:focus:ring-blue-800 '
             type='submit'
           >
             Start Campaign by clicking
