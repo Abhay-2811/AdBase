@@ -4,8 +4,8 @@ import { CoinbaseWalletLogo } from '../CoinbaseWalletLogo'
 
 function Navbar() {
   return (
-    <navbar >
-    <div className='flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px] bg-black'>
+    <navbar className='sticky top-0 z-50'>
+    <div className='flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px] bg-black '>
     <div className='flex-1 text-center font-bold text-2xl text-purple-400'>
       <a href='/'>BaseAds</a>
     </div>

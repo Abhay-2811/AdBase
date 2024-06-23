@@ -36,9 +36,14 @@ const ThreeDCardDemo = ({ onDetailsClick }) => {
 const Popup = ({ onClose }) => (
   <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75">
     <div className="bg-gray-800 p-6 rounded-lg">
-      <h2 className="text-xl text-white  font-bold mb-2">Campaign</h2>
+      <h2 className="text-xl text-white font-bold mb-2">Campaign</h2>
       <p className="text-sm text-white mb-4">The spending limit is $50 ETH</p>
       <p className="text-sm text-white mb-4">Location: Asia</p>
+      <img
+        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Campaign"
+        className="h-60 w-full object-cover rounded-xl mb-4"
+      />
       <button className="mt-4 px-4 py-2 bg-red-500 text-white rounded" onClick={onClose}>Close</button>
     </div>
   </div>
@@ -62,10 +67,9 @@ function Landing() {
           <a href='/create'>+ Add Campaign</a>
         </button>
       </div>
-      <div className='flex flex-row mt-[] ml-[30px] mx-auto gap-x-12'>
+      <div className='flex flex-row ml-[30px] mx-auto gap-x-12'>
         <ThreeDCardDemo onDetailsClick={handleDetailsClick} />
         <ThreeDCardDemo onDetailsClick={handleDetailsClick} />
-     
       </div>
       {showPopup && <Popup onClose={handleClosePopup} />}
     </div>
