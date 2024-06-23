@@ -1,4 +1,4 @@
 {
-  "AdBaseModule#AdBase": "0xFb9650e3FdCfe98b9Ed2b364c22715C79bb034B2",
-  "VerifierModule#PlonkVerifier": "0xC155236fF06E394806C3A313EB0B1fda4085C49b"
+  "AdBaseModule#PlonkVerifier": "0x886e41abD4357cEC053A236548CA39248DFb0EcC",
+  "AdBaseModule#AdBase": "0x7ce9B26204108da8De59b3F43c98C06b732cF19e"
 }
