@@ -71,7 +71,7 @@ function Landing() {
     
     </div>
 
-      <div className='flex flex-row mt-[50px] ml-[30px] mx-auto gap-x-12'>
+      <div className='flex flex-row mt-[0] ml-[30px] mx-auto gap-x-12'>
         <ThreeDCardDemo/>
         <ThreeDCardDemo/>
       </div>

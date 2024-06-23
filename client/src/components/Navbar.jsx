@@ -5,19 +5,21 @@ import { CoinbaseWalletLogo } from '../CoinbaseWalletLogo'
 function Navbar() {
   return (
     <navbar >
-    <div className='flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px]
-bg-black '>
-      <div className='flex-1 font-bold text-2xl text-purple-400'>
+    <div className='flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px] bg-black'>
+    <div className='flex-1 text-center font-bold text-2xl text-purple-400'>
       <a href='/'>BaseAds</a>
-      </div>
-      <h1 className='font-bold text-2xl text-purple-400'>
+    </div>
+    <div className='flex items-center space-x-8'>
+      <h1 className='font-bold text-2xl text-white'>
         <a href='/landing'>Explore</a>
       </h1>
-      <div className='flex-1 flex justify-end text-white'>
+      <div className='text-white'>
         <BlackCreateWalletButton />
       </div>
     </div>
-    <hr className='border-t-4 border-purple-600 ' />
+  </div>
+  <hr className='border-t-4 border-purple-600' />
+  
   </navbar>
   
   )
