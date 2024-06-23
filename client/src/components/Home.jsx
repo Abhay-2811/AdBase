@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 
 import { TypewriterEffectSmooth } from './ui/typewriter-effect';
@@ -50,14 +51,27 @@ function Home() {
 
     <div className='flex flex-col md:flex-row justify-between mx-auto md:gap-x-12 gap-y-12'>
     <div>
-    <h1 className='text-center font-medium text-3xl text-purple-500'>Decentralization Meets Scale</h1>
-    <p className='mt-[20px] text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+    <motion.h1 className='text-center font-medium text-3xl text-purple-500'
+     initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2 }}>
+          Decentralization Meets Scale </motion.h1>
+
+    <motion.p   className='mt-[20px] text-lg'
+    initial={{ x: -100, opacity: 0 }}
+    animate={{ x: 0, opacity: 1 }}
+    transition={{ duration: 4 }}>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
     <br/> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-    <br/> s nisi ut aliquip ex ea commodo consequat..</p>
+    <br/> s nisi ut aliquip ex ea commodo consequat.</motion.p>
     </div>
-    <div>
+    <motion.div
+        className='h-[400px]'
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 3 }}>
     <img  className='h-[400px] ' src='https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/6480e2eb60a636267f069f16_autonomy-collage-2.png' alt='image'/>
-    </div>
+    </motion.div>
     </div>
 
     <div className='flex flex-col md:flex-row justify-between mx-auto md:gap-x-12 gap-y-12'>
