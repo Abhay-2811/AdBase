@@ -50,14 +50,20 @@ const Popup = ({ campaign, onClose, showDetails }) => (
         </>
       ) : null}
       <div className='mt-8 flex flex-col items-center'>
-             <p className='text-sm text-white mb-4'>$100 ETH</p>
-        <h2 className='text-xl text-white font-bold mb-4'>Claimed Amount</h2>
-        <p className='text-sm text-white mb-4'>$50 ETH</p>
-        <h2 className='text-xl text-white font-bold mb-4'>Claimable Amount</h2>
+      <p className='text-lg text-white mb-4'>No of clicks = 22</p>
+      <div className='flex flex-row gap-x-4'>
+             <p className='text-xl text-white mb-4'>$100 ETH</p>
+        <button className='text-lg text-white font-semibold mb-4 border border px-[6px] py-[2px] rounded-lg bg-black'>Claimed </button>
+        </div>
+        <div className='flex flex-row gap-x-4'>
+        <p className='text-xl text-white mb-4'>$150 ETH</p>
+        <button className='text-lg text-white font-semibold mb-4 border border px-[6px] py-[2px] rounded-lg bg-black'>Claimable </button>
+   </div>
       </div>
       <button className="mt-4 px-4 py-2 bg-red-500 text-white rounded" onClick={onClose}>Close</button>
     </div>
   </div>
+  
 );
 
 const TypewriterEffectSmoothDemo = () => {
