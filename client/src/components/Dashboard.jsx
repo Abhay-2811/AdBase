@@ -121,10 +121,7 @@ function Dashboard() {
       </div>
       {showPopup && <Popup campaign={selectedCampaign} onClose={handleClosePopup} showDetails={showDetails} />}
       <div className='mt-8 flex flex-col items-center'>
-      <p className='text-sm text-white mb-4'>$100 ETH</p>
-        <h2 className='text-xl text-white font-bold mb-4'>Claimed Amount</h2>
-        <p className='text-sm text-white mb-4'>$50 ETH</p>
-        <h2 className='text-xl text-white font-bold mb-4'>Claimable Amount</h2>
+     
        
       </div>
     </div>
