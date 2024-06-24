@@ -22,9 +22,25 @@ mongoose
 
 // Create a new campaign
 app.post("/campaigns", async (req, res) => {
-  const { campaignId, creator, ads, redirectUrl } = req.body;
+  const {
+    campaignId,
+    creator,
+    ads,
+    redirectUrl,
+    campaignName,
+    region,
+    spending_limit,
+  } = req.body;
   try {
-    const campaign = new Campaign({ campaignId, creator, ads, redirectUrl });
+    const campaign = new Campaign({
+      campaignId,
+      creator,
+      ads,
+      redirectUrl,
+      campaignName,
+      region,
+      spending_limit,
+    });
     await campaign.save();
     res.status(201).send(campaign);
   } catch (error) {
@@ -171,8 +187,11 @@ app.post("/dev/:address/genproof", async (req, res) => {
       "zk/circuit_js/circuit.wasm",
       "zk/circuit_final.zkey"
     );
-    const solidityCalldata = await snarkjs.plonk.exportSolidityCallData(proof, publicSignals);
-    res.status(200).json({proof, publicSignals, solidityCalldata});
+    const solidityCalldata = await snarkjs.plonk.exportSolidityCallData(
+      proof,
+      publicSignals
+    );
+    res.status(200).json({ proof, publicSignals, solidityCalldata });
   } catch (error) {}
 });
 
