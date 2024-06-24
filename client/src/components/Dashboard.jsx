@@ -110,7 +110,7 @@ function Dashboard() {
   ];
 
   return (
-    <div className='bg-black flex flex-col items-center h-screen'>
+    <div className='bg-black flex flex-col items-center h-screen scroller'>
       <div className='text-4xl'>
         <TypewriterEffectSmoothDemo />
       </div>

@@ -47,7 +47,7 @@ function Create() {
   };
 
   return (
-    <div className='mt-[-20px]'>
+    <div className='mt-[-20px] scroller'>
       <div className='bg-black h-screen'>
         <form className='flex flex-col ml-40 mr-40 my-5 dark mb-10 py-[50px]' onSubmit={handleSubmit}>
           <div className='relative z-0 w-full mb-6 group'>
