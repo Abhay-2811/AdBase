@@ -5,12 +5,13 @@ import { BlackCreateWalletButton } from "./CreateWallet";
 
 const AdContext = createContext();
 
-export const AdWrapper = ({ region, children }) => {
+export const AdWrapper = ({ region, dev_wallet_address, children }) => {
   const { address, isConnected } = useAccount();
   
   const context_value = {
     region,
-    address
+    address,
+    dev_wallet_address
   };
   const sdk = new CoinbaseWalletSDK({
     appName: "Adbase",
