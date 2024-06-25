@@ -1,9 +1,12 @@
 import React, {useEffect} from 'react'
 
 const DisplayAd = ({width}) => {
-  // const adData
+  const adUrl = 
+  useEffect(()=>{
+
+  })
   return (
-    <div>DisplayAd</div>
+    <iframe src="" frameborder="0"></iframe>
   )
 }
 

@@ -4,12 +4,12 @@ import { config } from "./Wagmi";
 import { AdWrapper } from "./AdWrapper";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-const AdBaseProvider = ({ region, children }) => {
+const AdBaseProvider = ({ region, dev_wallet_address, children }) => {
   const [queryClient] = useState(() => new QueryClient());
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <AdWrapper region={region} children={children} />
+        <AdWrapper region={region} dev_wallet_address={dev_wallet_address} children={children} />
       </QueryClientProvider>
     </WagmiProvider>
   );

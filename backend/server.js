@@ -114,7 +114,7 @@ app.get("/randomAd", async (req, res) => {
       Math.random() * selectedCampaign.ads.length
     );
     const selectedAd = selectedCampaign.ads[randomAdIndex];
-    res.send(selectedAd);
+    res.json({ ad: selectedAd, redirectUrl: selectedCampaign.redirectUrl });
   } catch (error) {
     res.status(400).send(error);
   }
