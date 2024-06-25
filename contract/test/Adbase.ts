@@ -28,6 +28,7 @@ describe("Adbase", function () {
       .connect(c1)
       .createCampaign(
         "asia-1",
+        
         "some_camp",
         hre.ethers.parseEther("1"),
         ["abc", "def"],

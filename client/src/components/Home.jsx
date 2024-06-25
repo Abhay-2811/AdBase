@@ -40,9 +40,9 @@ function Home() {
     </div>
    
 
-    <h3 className='mt-[20px] text-white text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
-    <br/> that ushers in a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
-    <br/> Ethereum Transactions</h3>
+    <h3 className='mt-[20px] text-white text-xl'>Create and manage ad campaigns effortlessly. Our user-friendly platform allows you 
+    <br/> to design, launch, and monitor your ads seamlessly, ensuring maximum reach and
+    <br/> engagement with minimal hassle.</h3>
     <button className='mt-[20px] border-2 border-purple-500 text-white px-[10px] 
     py-[10px] font-medium text-xl bg-gradient-to-r from-purple-900 via-black to-black  rounded-lg mx-auto
     '>Join the community</button>
@@ -55,15 +55,15 @@ function Home() {
      initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2 }}>
-          Decentralization Meets Scale </motion.h1>
+          Earn from Viewer Engagement</motion.h1>
 
     <motion.p   className='mt-[20px] text-lg'
     initial={{ x: -100, opacity: 0 }}
     animate={{ x: 0, opacity: 1 }}
     transition={{ duration: 4 }}>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-    <br/> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-    <br/> s nisi ut aliquip ex ea commodo consequat.</motion.p>
+    Generate revenue when viewers interact with your ads. Our system rewards you 
+    <br/> for each visit and click, turning viewer engagement into tangible
+    <br/> earnings for your campaigns.</motion.p>
     </div>
     <motion.div
         className='h-[400px]'
@@ -79,10 +79,10 @@ function Home() {
     <img  className='h-[400px] ' src='https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/647f71a77a2f4691b4fa2430_speed-comp-collage-2.png' alt='image'/>
     </div>
     <div className='order-1 md:order-2'>
-    <h1 className='text-center text-3xl font-semibold text-purple-500'>Superscalar Architecture</h1>
-    <p className='mt-[20px] text-lg '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-    <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-    <br/>superscalar, pipelined execution and optimized architecture.</p>
+    <h1 className='text-center text-3xl font-semibold text-purple-500'>Comprehensive Analytics</h1>
+    <p className='mt-[20px] text-lg '>Track the performance of your ads in real-time with our detailed analytics. Gain
+    <br/>  insights into viewer behavior, optimize your campaigns, and make data-driven decisions to 
+    <br/>enhance your advertising strategy.</p>
     </div>
     </div>
 
