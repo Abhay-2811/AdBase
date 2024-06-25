@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { uploadToIPFS } from './ipfsUpload';
+import { createCampaign } from '../contract/interaction';
 
 function Create() {
   const [formData, setFormData] = useState({
@@ -40,9 +41,32 @@ function Create() {
   };
 
   // Handler for form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+
+    const { name, price, region, file } = formData;
+
+    // Ensure the IPFS link is obtained before submitting the form
+    if (!ipfsLink) {
+      setUploadStatus('Please upload a file first.');
+      return;
+    }
+
+    const spendingLimit = parseFloat(price); // Assuming price is in ETH
+
+    try {
+      await createCampaign({
+        region,
+        campaignName: name,
+        spendingLimit,
+        adCIDs: [ipfsLink], // Assuming adCIDs is an array of IPFS links
+      });
+
+      setUploadStatus('Campaign created successfully!');
+    } catch (error) {
+      setUploadStatus('Failed to create campaign.');
+    }
+
     console.log(formData);
   };
 
