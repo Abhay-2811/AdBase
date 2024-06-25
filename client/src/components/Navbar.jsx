@@ -10,6 +10,9 @@ function Navbar() {
       <a href='/'>BaseAds</a>
     </div>
     <div className='flex items-center space-x-8'>
+    <h1 className='font-bold text-2xl text-white'>
+        <a href='/dashboard'>Dashoard</a>
+      </h1>
       <h1 className='font-bold text-2xl text-white'>
         <a href='/landing'>Explore</a>
       </h1>

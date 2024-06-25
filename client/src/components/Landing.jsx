@@ -61,7 +61,7 @@ function Landing() {
   };
 
   return (
-    <div className='bg-black text-white h-screen'>
+    <div className='bg-black text-white h-screen scroller'>
       <div className='flex items-center justify-end px-[100px] py-[30px]'>
         <button className='border border-2 border-purple-500 px-[20px] py-[7px] text-xl font-semibold rounded-lg bg-gradient-to-r from-purple-900 via-black to-black text-white'>
           <a href='/create'>+ Add Campaign</a>

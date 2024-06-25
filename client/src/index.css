@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroller {
+  
+    overflow-y: scroll;
+    scrollbar-color: #007 #843891;
+  }
+  
