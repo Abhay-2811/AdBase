@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { uploadToIPFS } from './ipfsUpload';
+import { useWalletClient, useConnections } from 'wagmi';
 import { createCampaign } from '../contract/interaction';
+import { uploadToIPFS } from './ipfsUpload';
 
 function Create() {
   const [formData, setFormData] = useState({
@@ -12,7 +13,11 @@ function Create() {
   const [ipfsLink, setIpfsLink] = useState('');
   const [uploadStatus, setUploadStatus] = useState('');
 
-  // Handler for form field changes
+  const connections = useConnections('https://sepolia.base.org');
+  const { data: walletClient } = useWalletClient({
+    connector: connections[0]?.connector,
+  });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,7 +26,6 @@ function Create() {
     });
   };
 
-  // Handler for file input change
   const handleFileChange = async (e) => {
     const file = e.target.files[0];
     setFormData({
@@ -29,7 +33,6 @@ function Create() {
       file: file,
     });
 
-    // Upload file to IPFS
     try {
       setUploadStatus('Uploading to IPFS...');
       const ipfsLink = await uploadToIPFS(file);
@@ -40,34 +43,28 @@ function Create() {
     }
   };
 
-  // Handler for form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { name, price, region, file } = formData;
-
-    // Ensure the IPFS link is obtained before submitting the form
-    if (!ipfsLink) {
-      setUploadStatus('Please upload a file first.');
+    if (!walletClient) {
+      console.error('Wallet client is not available');
       return;
     }
 
-    const spendingLimit = parseFloat(price); // Assuming price is in ETH
+    const { name, price, region, file } = formData;
+    const adCIDs = [ipfsLink]; // Use the IPFS link obtained
 
     try {
       await createCampaign({
+        walletClient,
         region,
         campaignName: name,
-        spendingLimit,
-        adCIDs: [ipfsLink], // Assuming adCIDs is an array of IPFS links
+        spendingLimit: price,
+        adCIDs,
       });
-
-      setUploadStatus('Campaign created successfully!');
     } catch (error) {
-      setUploadStatus('Failed to create campaign.');
+      console.error('Error creating campaign:', error);
     }
-
-    console.log(formData);
   };
 
   return (
@@ -193,6 +190,7 @@ function Create() {
         </form>
       </div>
     </div>
+
   );
 }
 
