@@ -70,13 +70,13 @@ function Home() {
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 3 }}>
-    <img  className='h-[400px] ' src='https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/6480e2eb60a636267f069f16_autonomy-collage-2.png' alt='image'/>
+    <img  className='h-[400px] w-[400px]' src='https://i.pinimg.com/originals/12/66/07/126607145b0a3adf66144b7bd6b39635.jpg' alt='image'/>
     </motion.div>
     </div>
 
     <div className='flex flex-col md:flex-row justify-between mx-auto md:gap-x-12 gap-y-12'>
     <div className='order-2 md:order-1'>
-    <img  className='h-[400px] ' src='https://assets-global.website-files.com/647f71a77a2f4691b4fa23a7/647f71a77a2f4691b4fa2430_speed-comp-collage-2.png' alt='image'/>
+    <img  className='h-[350px]  w-[400px]' src='https://th.bing.com/th/id/OIP.QrDQkub-pjsi9RoWq8NJJAHaEo?rs=1&pid=ImgDetMain' alt='image'/>
     </div>
     <div className='order-1 md:order-2'>
     <h1 className='text-center text-3xl font-semibold text-purple-500'>Comprehensive Analytics</h1>

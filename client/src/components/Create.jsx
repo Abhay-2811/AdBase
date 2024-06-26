@@ -51,7 +51,7 @@ function Create() {
       return;
     }
 
-    const { name, price, region, file } = formData;
+    const { name, price, region } = formData;
     const adCIDs = [ipfsLink]; // Use the IPFS link obtained
 
     try {
@@ -190,7 +190,6 @@ function Create() {
         </form>
       </div>
     </div>
-
   );
 }
 
