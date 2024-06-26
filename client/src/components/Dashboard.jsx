@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CardBody, CardContainer, CardItem } from "../../src/components/ui/3d-card";
 import { TypewriterEffectSmooth } from './ui/typewriter-effect';
 
+
 const ThreeDCardDemo = ({ onDetailsClick, campaign }) => {
   return (
     <CardContainer className="inter-var">
