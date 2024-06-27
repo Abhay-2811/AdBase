@@ -64,17 +64,21 @@ function Landing() {
     { name: 'Campaign 1', spendingLimit: 30, location: 'Asia' },
     { name: 'Campaign 2', spendingLimit: 40, location: 'Europe' },
     { name: 'Campaign 3', spendingLimit: 50, location: 'Africa' },
-    { name: 'Campaign 4', spendingLimit: 60, location: 'America' }
+    { name: 'Campaign 4', spendingLimit: 60, location: 'America' },
+    { name: 'Campaign 5', spendingLimit: 60, location: 'America' },
+    { name: 'Campaign 6', spendingLimit: 60, location: 'America' },
+    { name: 'Campaign 6', spendingLimit: 60, location: 'America' },
+    { name: 'Campaign 6', spendingLimit: 60, location: 'America' },
   ];
 
   return (
     <div className='bg-black text-white h-screen scroller'>
       <div className='flex items-center justify-end px-[100px] py-[30px]'>
-        <button className='border border-2 border-purple-500 px-[20px] py-[7px] text-xl font-semibold rounded-lg bg-gradient-to-r from-purple-900 via-black to-black text-white'>
+        <button className='border border-2 border-purple-500 px-[20px] py-[7px] text-xl font-semibold rounded-lg bg-gradient-to-r from-purple-900 via-black to-black text-white mr-[110px] mt-[20px]'>
           <a href='/create'>+ Add Campaign</a>
         </button>
       </div>
-      <div className='flex flex-row ml-[40px] mx-auto gap-x-12'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-12 max-w-6xl mx-auto px-4 mt-[30px]'>
         {campaigns.map((campaign, index) => (
           <CardWithImage key={index} campaign={campaign} />
         ))}
