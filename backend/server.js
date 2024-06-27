@@ -6,11 +6,13 @@ const Campaign = require("./models/Campaign");
 const Dev = require("./models/Dev");
 const snarkjs = require("snarkjs");
 const fs = require("fs");
+const cors = require("cors");
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware
+app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
