@@ -2,6 +2,15 @@ import React from 'react'
 import { BlackCreateWalletButton } from '../BlackCreateWalletButton'
 import { CoinbaseWalletLogo } from '../CoinbaseWalletLogo'
 
+
+
+const gradientStyle = {
+  background: 'linear-gradient(to right, #45E1E5, #0052FF, #B82EA4, #FF9533, #7FD057, #45E1E5)',
+  height: '4px',
+  width: '100%',
+  border: 'none',
+};
+
 function Navbar() {
   return (
     <navbar className='sticky top-0 z-50'>
@@ -21,7 +30,7 @@ function Navbar() {
       </div>
     </div>
   </div>
-  <hr className='border-t-4 border-purple-600' />
+  <div style={gradientStyle} />
   
   </navbar>
   
