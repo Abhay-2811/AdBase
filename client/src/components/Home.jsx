@@ -17,14 +17,13 @@ export function VortexDemo() {
         <TypewriterEffectSmoothDemo />
         </h2>
         <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-        Create and manage add campaigns effortlessly. Our user-friendly platform allows you
-         <br /> to design, launch, and monitor your Ad's seamlessly.
+ 
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
           <button className="border-2 border-purple-500 text-white px-[10px] py-[10px] font-medium text-xl bg-gradient-to-r from-purple-900 via-black to-black rounded-lg">
             Join Community
           </button>
-          <button className="px-4 py-2  font-medium border-2 rounded-lg py-[10px] bg-black text-white">Watch trailer</button>
+          <button className="px-4 py-2  font-medium border-2 rounded-lg py-[10px] bg-black text-white"> <a href='/landing'>Watch trailer</a></button>
         </div>
       </Vortex>
     </div>

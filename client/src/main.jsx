@@ -11,6 +11,7 @@ import { Route } from 'react-router-dom'
 import Landing from './components/Landing.jsx'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Dashboard from './components/Dashboard.jsx'
+import {NextUIProvider} from '@nextui-org/react'
 
 // Assuming WagmiProvider and config are imported correctly
 import { WagmiProvider } from 'wagmi';
@@ -31,11 +32,15 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+ 
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
+      <NextUIProvider>
         <Navbar />
         <RouterProvider router={router} />
+        </NextUIProvider>
       </QueryClientProvider>
     </WagmiProvider>
+ 
   </React.StrictMode>,
 )
