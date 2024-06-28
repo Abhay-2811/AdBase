@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _react = _interopRequireWildcard(require("react"));
+var _AdWrapper = require("./AdWrapper");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
@@ -53,12 +54,15 @@ var checkContentType = /*#__PURE__*/function () {
   };
 }();
 var DisplayAd = function DisplayAd(_ref2) {
+  var _ad$contenttype, _ad$contenttype2;
   var width = _ref2.width,
     height = _ref2.height;
   var _useState = (0, _react.useState)(null),
     _useState2 = _slicedToArray(_useState, 2),
     ad = _useState2[0],
     setAd = _useState2[1];
+  var _useAdContext = (0, _AdWrapper.useAdContext)(),
+    dev_wallet_address = _useAdContext.dev_wallet_address;
   (0, _react.useEffect)(function () {
     var getAd = /*#__PURE__*/function () {
       var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
@@ -100,15 +104,38 @@ var DisplayAd = function DisplayAd(_ref2) {
       getAd();
     }
   }, [ad]);
-  return /*#__PURE__*/_react["default"].createElement("div", null, " ", ad ? /*#__PURE__*/_react["default"].createElement("a", {
-    href: ad.redirectUrl,
-    target: "_blank"
-  }, ad.contenttype.startsWith("image/") ? /*#__PURE__*/_react["default"].createElement("img", {
+  var handleAdClick = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+        while (1) switch (_context3.prev = _context3.next) {
+          case 0:
+            _context3.next = 2;
+            return fetch("".concat(backendUrl, "/dev/").concat(dev_wallet_address, "/adclick"), {
+              method: "POST",
+              headers: {
+                Accept: "*/*"
+              }
+            });
+          case 2:
+            window.location.href = ad.redirectUrl;
+          case 3:
+          case "end":
+            return _context3.stop();
+        }
+      }, _callee3);
+    }));
+    return function handleAdClick() {
+      return _ref4.apply(this, arguments);
+    };
+  }();
+  return /*#__PURE__*/_react["default"].createElement("div", null, " ", ad ? /*#__PURE__*/_react["default"].createElement("div", {
+    onClick: handleAdClick
+  }, " ", (_ad$contenttype = ad.contenttype) !== null && _ad$contenttype !== void 0 && _ad$contenttype.startsWith("image/") ? /*#__PURE__*/_react["default"].createElement("img", {
     src: ad.ad,
     alt: "Ad",
     width: width,
     height: height
-  }) : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, ad.contenttype.startsWith("video/") ? /*#__PURE__*/_react["default"].createElement("video", {
+  }) : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, (_ad$contenttype2 = ad.contenttype) !== null && _ad$contenttype2 !== void 0 && _ad$contenttype2.startsWith("video/") ? /*#__PURE__*/_react["default"].createElement("video", {
     width: width,
     height: height,
     autoPlay: true,

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 const backendUrl = "http://16.171.132.217:3000";
-
-const checkContentType = async (url) => {
+import { useAdContext } from "./AdWrapper";
+const checkContentType = async (url: string) => {
   try {
     const response = await fetch(url, { method: "HEAD" });
     const contentType = response.headers.get("content-type");
@@ -11,8 +11,14 @@ const checkContentType = async (url) => {
   }
 };
 
-const DisplayAd = ({ width, height }) => {
-  const [ad, setAd] = useState(null);
+const DisplayAd = ({ width, height }: { width: number; height: number }) => {
+  const [ad, setAd] = useState<{
+    ad: string;
+    redirectUrl: string;
+    contenttype: string | undefined;
+  } | null>(null);
+
+  const { dev_wallet_address } = useAdContext();
 
   useEffect(() => {
     const getAd = async () => {
@@ -34,21 +40,28 @@ const DisplayAd = ({ width, height }) => {
       getAd();
     }
   }, [ad]);
+  const handleAdClick = async () => {
+    await fetch(`${backendUrl}/dev/${dev_wallet_address}/adclick`, {
+      method: "POST",
+      headers: {
+        Accept: "*/*",
+      },
+    });
+    window.location.href = ad!.redirectUrl;
+  };
   return (
     <div>
       {" "}
       {ad ? (
-        <a href={ad.redirectUrl} target="_blank">
-          {ad.contenttype.startsWith("image/") ? (
-            <img src={ad.ad} alt="Ad" width={width} height={height}/>
+        <div onClick={handleAdClick}>
+          {" "}
+          {ad.contenttype?.startsWith("image/") ? (
+            <img src={ad.ad} alt="Ad" width={width} height={height} />
           ) : (
             <>
-              {ad.contenttype.startsWith("video/") ? (
+              {ad.contenttype?.startsWith("video/") ? (
                 <video width={width} height={height} autoPlay muted loop>
-                  <source
-                    src={ad.ad}
-                    type="video/mp4"
-                  />
+                  <source src={ad.ad} type="video/mp4" />
                   Type Not supported
                 </video>
               ) : (
@@ -56,7 +69,7 @@ const DisplayAd = ({ width, height }) => {
               )}
             </>
           )}
-        </a>
+        </div>
       ) : (
         <></>
       )}

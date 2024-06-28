@@ -14,8 +14,8 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 var config = exports.config = (0, _wagmi.createConfig)({
   chains: [_chains.baseSepolia],
   connectors: [(0, _connectors.coinbaseWallet)({
-    appName: 'AdBase',
-    preference: 'smartWalletOnly'
+    appName: "AdBase",
+    preference: "smartWalletOnly"
   })],
   transports: _defineProperty({}, _chains.baseSepolia.id, (0, _wagmi.http)())
 });
