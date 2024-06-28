@@ -14,7 +14,7 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-var backendUrl = "http://16.171.132.217:3000";
+var backendUrl = "http://localhost:8000";
 var DisplayAd = function DisplayAd(_ref) {
   var width = _ref.width;
   var _useState = (0, _react.useState)(null),
@@ -25,13 +25,16 @@ var DisplayAd = function DisplayAd(_ref) {
     var headersList = {
       Accept: "*/*"
     };
-    fetch("http://16.171.132.217:3000/randomAd", {
-      method: "GET",
-      headers: headersList
-    }).then(function (res) {
-      console.log(res);
-      setAd(res);
-    });
+    if (!ad) {
+      fetch("".concat(backendUrl, "/randomAd"), {
+        method: "GET",
+        headers: headersList
+      }).then(function (res) {
+        res.json().then(function (random_ad) {
+          return setAd(random_ad);
+        });
+      });
+    }
   }, [ad]);
   return /*#__PURE__*/_react["default"].createElement("div", null, " ", ad ? /*#__PURE__*/_react["default"].createElement("iframe", {
     src: ad.ad,

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-const backendUrl = "http://16.171.132.217:3000";
+const backendUrl = "http://localhost:8000";
 
 const DisplayAd = ({ width }) => {
   const [ad, setAd] = useState(null);
@@ -9,13 +9,16 @@ const DisplayAd = ({ width }) => {
       Accept: "*/*",
     };
 
-    fetch("http://16.171.132.217:3000/randomAd", {
-      method: "GET",
-      headers: headersList,
-    }).then((res) => {
-      console.log(res);
-      setAd(res);
-    });
+    if (!ad) {
+      fetch(`${backendUrl}/randomAd`, {
+        method: "GET",
+        headers: headersList,
+      }).then((res) => {
+        res.json().then((random_ad) => {
+          setAd(random_ad);
+        });
+      });
+    }
   }, [ad]);
   return (
     <div>
