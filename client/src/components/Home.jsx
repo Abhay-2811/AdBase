@@ -40,13 +40,13 @@ const TypewriterEffectSmoothDemo = () => {
             text: "Run",
         },
         {
-            text: "Ads",
+            text: "campaigns",
         },
         {
             text: "with",
         },
         {
-            text: "BaseADs.",
+            text: "Adbase.",
             className: "text-purple-500 dark:text-purple-500",
         },
     ];

@@ -16,7 +16,7 @@ function Navbar() {
     <navbar className='sticky top-0 z-50'>
     <div className='flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px] bg-black '>
     <div className='flex-1 flex-start font-bold text-2xl text-purple-400'>
-      <a href='/'>BaseAds</a>
+      <a href='/'>Adbase</a>
     </div>
     <div className='flex items-center space-x-8'>
     <h1 className='font-medium text-xxl text-white'>
