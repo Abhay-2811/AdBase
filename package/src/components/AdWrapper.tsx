@@ -1,4 +1,4 @@
-import React, { ReactNode, createContext, useState, useContext} from "react";
+import React, { createContext, useContext} from "react";
 import { CoinbaseWalletSDK } from "@coinbase/wallet-sdk";
 import { useAccount } from "wagmi";
 import { BlackCreateWalletButton } from "./CreateWallet";
