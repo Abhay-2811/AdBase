@@ -1,35 +1,62 @@
 import React, { useEffect, useState } from "react";
 const backendUrl = "http://16.171.132.217:3000";
 
-const DisplayAd = ({ width }) => {
+const checkContentType = async (url) => {
+  try {
+    const response = await fetch(url, { method: "HEAD" });
+    const contentType = response.headers.get("content-type");
+    return contentType;
+  } catch (error) {
+    console.error("Error fetching the content type:", error);
+  }
+};
+
+const DisplayAd = ({ width, height }) => {
   const [ad, setAd] = useState(null);
 
   useEffect(() => {
-    let headersList = {
-      Accept: "*/*",
+    const getAd = async () => {
+      const res = await fetch(`${backendUrl}/randomAd`, {
+        method: "GET",
+        headers: {
+          Accept: "*/*",
+        },
+      });
+      const ad_data = await res.json();
+      const contenttype = await checkContentType(ad_data.ad);
+      setAd({
+        ...ad_data,
+        contenttype,
+      });
     };
 
     if (!ad) {
-      fetch(`${backendUrl}/randomAd`, {
-        method: "GET",
-        headers: headersList,
-      }).then((res) => {
-        res.json().then((random_ad) => {setAd(random_ad)});
-      });
+      getAd();
     }
   }, [ad]);
   return (
     <div>
       {" "}
       {ad ? (
-        <iframe
-          src={ad.ad}
-          frameBorder="0"
-          width="200"
-          height="200"
-          name="imgbox"
-          id="imgbox"
-        ></iframe>
+        <a href={ad.redirectUrl} target="_blank">
+          {ad.contenttype.startsWith("image/") ? (
+            <img src={ad.ad} alt="Ad" width={width} height={height}/>
+          ) : (
+            <>
+              {ad.contenttype.startsWith("video/") ? (
+                <video width={width} height={height} autoPlay muted loop>
+                  <source
+                    src={ad.ad}
+                    type="video/mp4"
+                  />
+                  Type Not supported
+                </video>
+              ) : (
+                <>Unspported Type</>
+              )}
+            </>
+          )}
+        </a>
       ) : (
         <></>
       )}
