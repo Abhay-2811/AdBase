@@ -8,9 +8,9 @@ function Create() {
     name: '',
     price: '',
     region: '',
-    file: null,
+    files: [],
   });
-  const [ipfsLink, setIpfsLink] = useState('');
+  const [ipfsLinks, setIpfsLinks] = useState([]);
   const [uploadStatus, setUploadStatus] = useState('');
 
   const connections = useConnections('https://sepolia.base.org');
@@ -27,17 +27,19 @@ function Create() {
   };
 
   const handleFileChange = async (e) => {
-    const file = e.target.files[0];
+    const files = Array.from(e.target.files);
     setFormData({
       ...formData,
-      file: file,
+      files: files,
     });
 
+    setUploadStatus('Uploading to IPFS...');
     try {
-      setUploadStatus('Uploading to IPFS...');
-      const ipfsLink = await uploadToIPFS(file);
-      setIpfsLink(ipfsLink);
-      setUploadStatus('File uploaded to IPFS successfully!');
+      for (let i = 0; i < files.length; i++) {
+        const link = await uploadToIPFS(files[i]);
+        setIpfsLinks((prevLinks) => [...prevLinks, link]);
+        setUploadStatus((prevStatus) => `${prevStatus}\nFile ${i + 1} uploaded to IPFS successfully!`);
+      }
     } catch (error) {
       setUploadStatus('IPFS upload failed');
     }
@@ -52,7 +54,6 @@ function Create() {
     }
 
     const { name, price, region } = formData;
-    const adCIDs = [ipfsLink]; // Use the IPFS link obtained
 
     try {
       await createCampaign({
@@ -60,7 +61,7 @@ function Create() {
         region,
         campaignName: name,
         spendingLimit: price,
-        adCIDs,
+        adCIDs: ipfsLinks,
       });
     } catch (error) {
       console.error('Error creating campaign:', error);
@@ -149,35 +150,45 @@ function Create() {
 
           <div className='mb-6'>
             <label className='block mb-2 text-sm font-medium text-gray-900 dark:text-white' htmlFor='file_input'>
-              Upload file
+              Upload files
             </label>
             <input
               type='file'
-              name='file'
+              name='files'
               required
+              multiple
               onChange={handleFileChange}
               className='mt-[20px] border border-2 border-transparent px-[10px]'
             />
             <br />
-            {formData.file && (
-              <img
-                src={URL.createObjectURL(formData.file)}
-                alt='Uploaded File'
-                style={{ maxWidth: '200px', marginTop: '10px' }}
-              />
+            {formData.files.length > 0 && (
+              <div>
+                {formData.files.map((file, index) => (
+                  <img
+                    key={index}
+                    src={URL.createObjectURL(file)}
+                    alt={`Uploaded File ${index + 1}`}
+                    style={{ maxWidth: '200px', marginTop: '10px' }}
+                  />
+                ))}
+              </div>
             )}
           </div>
 
           {uploadStatus && (
-            <p className='text-white'>{uploadStatus}</p>
+            <pre className='text-white'>{uploadStatus}</pre>
           )}
 
-          {ipfsLink && (
+          {ipfsLinks.length > 0 && (
             <div className='mt-4'>
-              <a href={ipfsLink} target='_blank' rel='noopener noreferrer' className='text-blue-600'>
-                View Uploaded File on IPFS
-              </a>
-              <p className='text-white mt-2 break-all'>{ipfsLink}</p>
+              {ipfsLinks.map((link, index) => (
+                <div key={index}>
+                  <a href={link} target='_blank' rel='noopener noreferrer' className='text-blue-600'>
+                    View Uploaded File {index + 1} on IPFS
+                  </a>
+                  <p className='text-white mt-2 break-all'>{link}</p>
+                </div>
+              ))}
             </div>
           )}
 
