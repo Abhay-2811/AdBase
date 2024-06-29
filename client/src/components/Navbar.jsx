@@ -1,42 +1,41 @@
-import React from 'react'
-import { BlackCreateWalletButton } from '../BlackCreateWalletButton'
-import { CoinbaseWalletLogo } from '../CoinbaseWalletLogo'
-
-
+import React from "react";
+import { BlackCreateWalletButton } from "../BlackCreateWalletButton";
+import { CoinbaseWalletLogo } from "../CoinbaseWalletLogo";
+import { useAccount } from "wagmi";
 
 const gradientStyle = {
-  background: 'linear-gradient(to right, #45E1E5, #0052FF, #B82EA4, #FF9533, #7FD057, #45E1E5)',
-  height: '4px',
-  width: '100%',
-  border: 'none',
+  background:
+    "linear-gradient(to right, #45E1E5, #0052FF, #B82EA4, #FF9533, #7FD057, #45E1E5)",
+  height: "4px",
+  width: "100%",
+  border: "none",
 };
 
 function Navbar() {
+  const { address, isConnected } = useAccount();
   return (
-    <navbar className='sticky top-0 z-50'>
-    <div className='flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px] bg-black '>
-    <div className='flex-1 flex-start font-bold text-2xl text-purple-400'>
-      <a href='/'>Adbase</a>
-    </div>
-    <div className='flex items-center space-x-8'>
-    <h1 className='font-medium text-xxl text-white'>
-        <a href='/dashboard'>Dashoard</a>
-      </h1>
-      <h1 className='font-medium text-xxl text-white'>
-        <a href='/landing'>Explore</a>
-      </h1>
-      <div className='text-white'>
-        <BlackCreateWalletButton />
+    <navbar className="sticky top-0 z-50">
+      <div className="flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px] bg-black ">
+        <div className="flex-1 flex-start font-bold text-2xl text-purple-400">
+          <a href="/">Adbase</a>
+        </div>
+        <div className="flex items-center space-x-8">
+          <h1 className="font-medium text-xxl text-white">
+            <a href="/dashboard">Dev Dashboard</a>
+          </h1>
+          <h1 className="font-medium text-xxl text-white">
+            <a href="/landing">Campaigns</a>
+          </h1>
+          <div className="text-white">
+            <BlackCreateWalletButton />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div style={gradientStyle} />
-  
-  </navbar>
-  
-  )
+      <div style={gradientStyle} />
+    </navbar>
+  );
 }
 
-export default Navbar
+export default Navbar;
 
 // <h1 className='text-white'>coinbaseWallet</h1>

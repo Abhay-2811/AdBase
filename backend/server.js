@@ -34,10 +34,11 @@ app.post("/campaigns", async (req, res) => {
     spending_limit,
   } = req.body;
   try {
+    const _ads = JSON.parse(ads);
     const campaign = new Campaign({
       campaignId,
       creator,
-      ads,
+      ads: _ads,
       redirectUrl,
       campaignName,
       region,
@@ -167,7 +168,9 @@ app.post("/dev/:address/adclick", async (req, res) => {
       { new: true, upsert: true }
     );
     if (!dev) {
-      return res.status(404).send();
+      const dev = new Dev({ devAddress: address, clicks: 1 });
+      await dev.save();
+      return res.status(201).send(dev);
     }
     res.send(dev);
   } catch (error) {

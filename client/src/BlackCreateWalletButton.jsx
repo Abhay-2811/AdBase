@@ -1,37 +1,37 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { useConnect } from 'wagmi';
-import { CoinbaseWalletLogo } from './CoinbaseWalletLogo';
- 
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { useAccount, useConnect } from "wagmi";
+import { CoinbaseWalletLogo } from "./CoinbaseWalletLogo";
+
 const GRADIENT_BORDER_WIDTH = 2;
- 
+
 const buttonStyles = {
-  background: 'transparent',
-  border: '1px solid transparent',
-  boxSizing: 'border-box',
+  background: "transparent",
+  border: "1px solid transparent",
+  boxSizing: "border-box",
 };
- 
+
 const contentWrapperStyle = {
-  position: 'relative',
+  position: "relative",
 };
- 
+
 function Gradient({ children, style, isAnimationDisabled = false }) {
   const [isAnimating, setIsAnimating] = useState(false);
   const gradientStyle = useMemo(() => {
-    const rotate = isAnimating ? '720deg' : '0deg';
+    const rotate = isAnimating ? "720deg" : "0deg";
     return {
       transform: `rotate(${rotate})`,
       transition: isAnimating
-        ? 'transform 2s cubic-bezier(0.27, 0, 0.24, 0.99)'
-        : 'none',
+        ? "transform 2s cubic-bezier(0.27, 0, 0.24, 0.99)"
+        : "none",
       ...style,
     };
   }, [isAnimating, style]);
- 
+
   const handleMouseEnter = useCallback(() => {
     if (isAnimationDisabled || isAnimating) return;
     setIsAnimating(true);
   }, [isAnimationDisabled, isAnimating, setIsAnimating]);
- 
+
   useEffect(() => {
     if (!isAnimating) return;
     const animationTimeout = setTimeout(() => {
@@ -41,7 +41,7 @@ function Gradient({ children, style, isAnimationDisabled = false }) {
       clearTimeout(animationTimeout);
     };
   }, [isAnimating]);
- 
+
   return (
     <div style={contentWrapperStyle} onMouseEnter={handleMouseEnter}>
       <div className="gradient-background" style={gradientStyle} />
@@ -49,10 +49,10 @@ function Gradient({ children, style, isAnimationDisabled = false }) {
     </div>
   );
 }
- 
+
 export function BlackCreateWalletButton({ height = 66, width = 200 }) {
   const { connectors, connect } = useConnect();
- 
+  const { address, isConnected } = useAccount();
   const minButtonHeight = 48;
   const minButtonWidth = 200;
   const buttonHeight = Math.max(minButtonHeight, height);
@@ -61,60 +61,72 @@ export function BlackCreateWalletButton({ height = 66, width = 200 }) {
   const styles = useMemo(
     () => ({
       gradientContainer: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'black',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "black",
         borderRadius: buttonHeight / 2,
         height: buttonHeight,
         width: buttonWidth,
-        boxSizing: 'border-box',
-        overflow: 'hidden',
+        boxSizing: "border-box",
+        overflow: "hidden",
       },
       gradient: {
         background:
-          'conic-gradient(from 180deg, #45E1E5 0deg, #0052FF 86.4deg, #B82EA4 165.6deg, #FF9533 255.6deg, #7FD057 320.4deg, #45E1E5 360deg)',
-        position: 'absolute',
+          "conic-gradient(from 180deg, #45E1E5 0deg, #0052FF 86.4deg, #B82EA4 165.6deg, #FF9533 255.6deg, #7FD057 320.4deg, #45E1E5 360deg)",
+        position: "absolute",
         top: -buttonHeight - GRADIENT_BORDER_WIDTH,
         left: -GRADIENT_BORDER_WIDTH,
         width: gradientDiameter,
         height: gradientDiameter,
       },
       buttonBody: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        boxSizing: 'border-box',
-        backgroundColor: '#000000',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        boxSizing: "border-box",
+        backgroundColor: "#000000",
         height: buttonHeight - GRADIENT_BORDER_WIDTH * 2,
         width: buttonWidth - GRADIENT_BORDER_WIDTH * 2,
-        fontFamily: 'Arial, sans-serif',
-        fontWeight: 'bold',
+        fontFamily: "Arial, sans-serif",
+        fontWeight: "bold",
         fontSize: 18,
         borderRadius: buttonHeight / 2,
-        position: 'relative',
+        position: "relative",
         paddingRight: 10,
       },
     }),
     [buttonHeight, buttonWidth, gradientDiameter]
   );
- 
+
   const createWallet = useCallback(() => {
+    if (isConnected) {
+      window.location.href = "/dashboard";
+    }
     const coinbaseWalletConnector = connectors.find(
-      (connector) => connector.id === 'coinbaseWalletSDK'
+      (connector) => connector.id === "coinbaseWalletSDK"
     );
     if (coinbaseWalletConnector) {
       connect({ connector: coinbaseWalletConnector });
     }
   }, [connectors, connect]);
- 
+
   return (
     <button style={buttonStyles} onClick={createWallet}>
       <div style={styles.gradientContainer}>
         <Gradient style={styles.gradient}>
           <div style={styles.buttonBody}>
-            <CoinbaseWalletLogo containerStyles={{ paddingRight: 10 }} />
-            Connect Wallet
+            {isConnected ? (
+              <>
+                <img src="/wallet.svg" width={35} className=" pr-3" />
+                {address.slice(0, 5)}...{address.slice(-3, -1)}
+              </>
+            ) : (
+              <>
+                <CoinbaseWalletLogo containerStyles={{ paddingRight: 10 }} />
+                Connect Wallet
+              </>
+            )}
           </div>
         </Gradient>
       </div>
