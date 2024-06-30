@@ -1,7 +1,8 @@
-import { createPublicClient, http, parseEther } from "viem";
+import { createPublicClient, formatEther, http, parseEther } from "viem";
 import { baseSepolia } from "viem/chains";
 import { abi, address } from "./data.json";
 const backendUrl = "https://api-testing.publicvm.com";
+const CPC = 0.00001;
 // Initialize public client
 const publicClient = createPublicClient({
   chain: baseSepolia,
@@ -40,7 +41,7 @@ const createCampaign = async ({
       region: region,
       spending_limit: Number(spendingLimit),
     });
-    console.log(JSON.parse(post_body))
+    console.log(JSON.parse(post_body));
     const res = await fetch(`${backendUrl}/campaigns`, {
       method: "POST",
       headers: {
@@ -56,4 +57,15 @@ const createCampaign = async ({
   }
 };
 
-export { createCampaign };
+const devClaimableAmount = async (dev_address, adclicks) => {
+  const claimedAmt = await publicClient.readContract({
+    abi: abi,
+    address: address,
+    functionName: "payouts",
+    args: [dev_address]
+  });
+  const claimableAmt = (CPC * adclicks ) - formatEther(claimedAmt);
+  return claimableAmt;
+};
+
+export { createCampaign, devClaimableAmount, CPC };
