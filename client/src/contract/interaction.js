@@ -1,7 +1,7 @@
 import { createPublicClient, http, parseEther } from "viem";
 import { baseSepolia } from "viem/chains";
 import { abi, address } from "./data.json";
-const backendUrl = "http://16.171.132.217:3000";
+const backendUrl = "https://api-testing.publicvm.com";
 // Initialize public client
 const publicClient = createPublicClient({
   chain: baseSepolia,

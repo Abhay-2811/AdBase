@@ -66,7 +66,7 @@ const CardWithImage = ({ campaign }) => {
 
 function Landing() {
   const { address, isConnected } = useAccount();
-  const backendUrl = "http://16.171.132.217:3000";
+  const backendUrl = "https://api-testing.publicvm.com";
   const [campaigns, setCampaigns] = useState(null);
 
   if (!isConnected) {

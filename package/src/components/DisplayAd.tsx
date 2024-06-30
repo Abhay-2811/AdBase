@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-const backendUrl = "http://16.171.132.217:3000";
+const backendUrl = "https://api-testing.publicvm.com";
 import { useAdContext } from "./AdWrapper";
 const checkContentType = async (url: string) => {
   try {

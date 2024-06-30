@@ -1,4 +1,4 @@
-const backendUrl = "13.48.43.45";
+const backendUrl = "https://api-testing.publicvm.com";
 
 async function getCampaigns() {
   const res = await fetch(`${backendUrl}\campaigns`, {
