@@ -75,6 +75,19 @@ app.get("/campaigns/:id", async (req, res) => {
     res.status(500).send(error);
   }
 });
+// Get a specific campaign by owner address
+app.get("/campaigns/:address", async (req, res) => {
+  const { address } = req.params;
+  try {
+    const campaign = await Campaign.findOne({ creator: address });
+    if (!campaign) {
+      return res.status(404).send();
+    }
+    res.send(campaign);
+  } catch (error) {
+    res.status(500).send(error);
+  }
+});
 
 // Update ad clicks and aggregated zk-proof
 app.patch("/campaigns/:id", async (req, res) => {
