@@ -195,7 +195,7 @@ app.post("/dev/:address/adclick", async (req, res) => {
 app.post("/dev/:address/genproof", async (req, res) => {
   const { address } = req.params;
   try {
-    const dev = await Dev.findOne({ devAddress: address });
+    const dev = await Dev.findOne({ devAddress: address.toLowerCase() });
     const input = {
       devAddress: 1,
       clicks: dev.clicks,
