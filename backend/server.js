@@ -140,7 +140,7 @@ app.get("/randomAd", async (req, res) => {
 app.get("/dev/:address", async (req, res) => {
   const { address } = req.params;
   try {
-    const dev = await Dev.findOne({ devAddress: address });
+    const dev = await Dev.findOne({ devAddress: address.toLowerCase() });
     if (!dev) {
       return res.status(404).send();
     }
@@ -154,7 +154,7 @@ app.get("/dev/:address", async (req, res) => {
 app.post("/dev", async (req, res) => {
   const { address } = req.body;
   try {
-    const dev = new Dev({ devAddress: address });
+    const dev = new Dev({ devAddress: address.toLowerCase() });
     await dev.save();
     res.send(dev);
   } catch (error) {
@@ -176,7 +176,7 @@ app.post("/dev/:address/adclick", async (req, res) => {
   const { address } = req.params;
   try {
     const dev = await Dev.findOneAndUpdate(
-      { devAddress: address },
+      { devAddress: address.toLowerCase() },
       { $inc: { clicks: 1 } },
       { new: true, upsert: true }
     );
