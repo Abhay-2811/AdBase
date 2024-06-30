@@ -76,7 +76,7 @@ app.get("/campaigns/:id", async (req, res) => {
   }
 });
 // Get a specific campaign by owner address
-app.get("/campaigns/:address", async (req, res) => {
+app.get("/campaigns/owner/:address", async (req, res) => {
   const { address } = req.params;
   try {
     const campaign = await Campaign.findOne({ creator: address });
