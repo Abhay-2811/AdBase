@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useWalletClient, useConnections, useAccount } from "wagmi";
 import { createCampaign } from "../contract/interaction";
 import { uploadToIPFS } from "./ipfsUpload";
+import { Spinner } from "@nextui-org/react";
 
-const backendUrl = "http://16.171.132.217:3000";
 
 function Create() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,8 @@ function Create() {
     files: [],
     redirectUrl: "",
   });
+  const [submitState, setSubmitState] = useState(0);
+
   const [ipfsLinks, setIpfsLinks] = useState([]);
   const { address } = useAccount();
   const connections = useConnections("https://sepolia.base.org");
@@ -43,7 +45,7 @@ function Create() {
       console.error("Wallet client is not available");
       return;
     }
-
+    setSubmitState(1);
     const { name, price, region, files, redirectUrl } = formData;
     try {
       for (let i = 0; i < files.length; i++) {
@@ -59,6 +61,7 @@ function Create() {
         callerAddress: address,
         redirectUrl: redirectUrl,
       });
+      setSubmitState(2);
     } catch (error) {
       console.error("Error creating campaign:", error);
     }
@@ -200,8 +203,11 @@ function Create() {
           <button
             className="text-white mt-6 border border-purple-600 focus:ring-4 font-medium rounded-lg text-sm  mx-auto px-10 py-2.5 text-center bg-transparent dark:focus:ring-blue-800 "
             type="submit"
+            disabled={submitState !== 0}
           >
-            Create Campaign
+            {submitState == 0 && <>Create Campaign</>}
+            {submitState == 1 && <Spinner size="sm" color="secondary" />}
+            {submitState == 2 && <>✅ Created</>}
           </button>
         </form>
       </div>

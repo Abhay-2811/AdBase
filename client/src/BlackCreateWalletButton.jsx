@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { useAccount, useConnect } from "wagmi";
+import { useAccount, useConnect, useDisconnect } from "wagmi";
 import { CoinbaseWalletLogo } from "./CoinbaseWalletLogo";
 
 const GRADIENT_BORDER_WIDTH = 2;
@@ -53,6 +53,7 @@ function Gradient({ children, style, isAnimationDisabled = false }) {
 export function BlackCreateWalletButton({ height = 66, width = 200 }) {
   const { connectors, connect } = useConnect();
   const { address, isConnected } = useAccount();
+  const { disconnect } = useDisconnect();
   const minButtonHeight = 48;
   const minButtonWidth = 200;
   const buttonHeight = Math.max(minButtonHeight, height);
@@ -101,7 +102,7 @@ export function BlackCreateWalletButton({ height = 66, width = 200 }) {
 
   const createWallet = useCallback(() => {
     if (isConnected) {
-      window.location.href = "/dashboard";
+      disconnect();
     }
     const coinbaseWalletConnector = connectors.find(
       (connector) => connector.id === "coinbaseWalletSDK"

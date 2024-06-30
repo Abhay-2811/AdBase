@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
-import { TypewriterEffectSmooth } from './ui/typewriter-effect';
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 import { Vortex } from "./ui/vortex";
 
@@ -14,66 +14,58 @@ export function VortexDemo() {
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
       >
         <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
-        <TypewriterEffectSmoothDemo />
+          <TypewriterEffectSmoothDemo />
         </h2>
-        <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
- 
-        </p>
+        <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center"></p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
           <button className="border-2 border-purple-500 text-white px-[10px] py-[10px] font-medium text-xl bg-gradient-to-r from-purple-900 via-black to-black rounded-lg">
-            Join Community
+            Create Ad Campaign
           </button>
-          <button className="px-4 py-2  font-medium border-2 rounded-lg py-[10px] bg-black text-white"> <a href='/landing'>Watch trailer</a></button>
+          <button className="px-4 py-2  font-medium border-2 rounded-lg py-[10px] bg-black text-white">
+            {" "}
+            <a href="/landing">Dev Docs</a>
+          </button>
         </div>
       </Vortex>
     </div>
   );
 }
 
-
-
-
-
 const TypewriterEffectSmoothDemo = () => {
-    const words = [
-        {
-            text: "Run",
-        },
-        {
-            text: "campaigns",
-        },
-        {
-            text: "with",
-        },
-        {
-            text: "Adbase.",
-            className: "text-purple-500 dark:text-purple-500",
-        },
-    ];
-    return (
-        <div className="flex flex-col items-center justify-center h-[5rem] mt-[40px]">
-            <TypewriterEffectSmooth words={words} />
-            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-            </div>
-        </div>
-    );
-}
+  const words = [
+    {
+      text: "Run",
+    },
+    {
+      text: "campaigns",
+    },
+    {
+      text: "with",
+    },
+    {
+      text: "Adbase.",
+      className: "text-purple-500 dark:text-purple-500",
+    },
+  ];
+  return (
+    <div className="flex flex-col items-center justify-center h-[5rem] mt-[40px]">
+      <TypewriterEffectSmooth words={words} />
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4"></div>
+    </div>
+  );
+};
 
 function Home() {
-    return (
-        <div className='flex flex-col items-center bg-black scroller h-screen'>
-
-    <div className='mt-[80px] flex flex-col gap-y-[80px] text-white mb-[30px]'>
-    <VortexDemo/>
+  return (
+    <div className="flex flex-col items-center bg-black scroller h-screen">
+      <div className="mt-[80px] flex flex-col gap-y-[80px] text-white mb-[30px]">
+        <VortexDemo />
+      </div>
     </div>
-</div>
-
-    )
+  );
 }
 
-export default Home
-
-
+export default Home;
 
 // <div className='flex flex-col md:flex-row justify-between mx-auto md:gap-x-12 gap-y-12'>
 // <div>
@@ -99,10 +91,6 @@ export default Home
 //     <img className='h-[400px] w-[400px]' src='https://i.pinimg.com/originals/12/66/07/126607145b0a3adf66144b7bd6b39635.jpg' alt='image' />
 // </motion.div>
 // </div>
-
-
-
-
 
 // <div className='flex justify-between items-center w-full px-6 py-4 bg-black'>
 // <div className='text-4xl flex-1 text-center'>
