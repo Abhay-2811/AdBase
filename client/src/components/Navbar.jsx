@@ -16,8 +16,8 @@ function Navbar() {
   return (
     <navbar className="sticky top-0 z-50">
       <div className="flex flex-row mx-auto px-[40px] py-[20px] justify-between items-center mt-[0px] bg-black ">
-        <div className="flex flex-row items-center space-x-2 flex-start font-bold text-2xl text-purple-400">
-          <img src="logo.svg" className="w-[80px] h-[80px] bg-white border-0 border-black rounded-full"/>
+        <div className="flex flex-row items-center flex-start font-bold text-2xl text-purple-400">
+          <img src="logo.png" className="w-[80px] h-[80px] filter-invert"/>
           <a href="/">Adbase</a>
         </div>
         <div className="flex items-center space-x-8">
