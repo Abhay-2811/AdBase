@@ -79,7 +79,7 @@ app.get("/campaigns/:id", async (req, res) => {
 app.get("/campaigns/owner/:address", async (req, res) => {
   const { address } = req.params;
   try {
-    const campaign = await Campaign.findOne({ creator: address });
+    const campaign = await Campaign.find({ creator: address });
     if (!campaign) {
       return res.status(404).send();
     }
