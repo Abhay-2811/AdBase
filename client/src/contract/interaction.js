@@ -20,13 +20,13 @@ const createCampaign = async ({
   redirectUrl,
 }) => {
   try {
-    const result = await walletClient.writeContract({
-      abi: abi,
-      address: "0x7ce9B26204108da8De59b3F43c98C06b732cF19e",
-      functionName: "createCampaign",
-      args: [region, campaignName, parseEther(spendingLimit), adCIDs],
-      value: parseEther(spendingLimit),
-    });
+    // const result = await walletClient.writeContract({
+    //   abi: abi,
+    //   address: "0x7ce9B26204108da8De59b3F43c98C06b732cF19e",
+    //   functionName: "createCampaign",
+    //   args: [region, campaignName, parseEther(spendingLimit), adCIDs],
+    //   value: parseEther(spendingLimit),
+    // });
     const camp_id = await publicClient.readContract({
       abi: abi,
       address: address,
@@ -51,7 +51,7 @@ const createCampaign = async ({
       body: post_body,
     });
     console.log(await res.json());
-    console.log("Campaign created successfully:", result);
+    // console.log("Campaign created successfully:", result);
   } catch (error) {
     console.error("Error creating campaign:", error);
   }

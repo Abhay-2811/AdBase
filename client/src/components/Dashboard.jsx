@@ -178,7 +178,7 @@ function Dashboard() {
               <h1 className="font-bold text-4xl">
                 {claimable ? (
                   <>
-                    {Number(claimable)}
+                    {Number(claimable).toPrecision(6)}
                     <br /> ETH
                   </>
                 ) : (

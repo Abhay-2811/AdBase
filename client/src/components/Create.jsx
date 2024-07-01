@@ -4,7 +4,6 @@ import { createCampaign } from "../contract/interaction";
 import { uploadToIPFS } from "./ipfsUpload";
 import { Spinner } from "@nextui-org/react";
 
-
 function Create() {
   const [formData, setFormData] = useState({
     name: "",
@@ -48,16 +47,19 @@ function Create() {
     setSubmitState(1);
     const { name, price, region, files, redirectUrl } = formData;
     try {
+      const ipfsUrls = [];
       for (let i = 0; i < files.length; i++) {
         const link = await uploadToIPFS(files[i]);
-        setIpfsLinks((prevLinks) => [...prevLinks, link]);
+        console.log(link);
+        ipfsUrls.push(link);
       }
+      console.log(ipfsUrls);
       await createCampaign({
         walletClient,
         region,
         campaignName: name,
         spendingLimit: price,
-        adCIDs: ipfsLinks,
+        adCIDs: ipfsUrls,
         callerAddress: address,
         redirectUrl: redirectUrl,
       });
