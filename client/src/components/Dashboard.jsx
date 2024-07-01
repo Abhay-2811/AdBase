@@ -178,7 +178,7 @@ function Dashboard() {
               <h1 className="font-bold text-4xl">
                 {claimable ? (
                   <>
-                    {Number(claimable).toPrecision(6)}
+                    {Number(claimable).toPrecision(3)}
                     <br /> ETH
                   </>
                 ) : (
@@ -209,7 +209,7 @@ function Dashboard() {
               <h1 className="font-bold text-4xl">
                 {devinfo ? (
                   <>
-                    {devinfo.clicks * CPC}
+                    {Number(devinfo.clicks * CPC).toPrecision(3)}
                     <br /> ETH
                   </>
                 ) : (
