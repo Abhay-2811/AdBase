@@ -18,6 +18,12 @@ The Adbase dashboard provides an intuitive interface to manage and monitor your 
 - **Revenue Overview:** Monitor total revenue earned from your campaigns.
 - **Claim Earnings:** Easily claim your earnings through the dashboard.
 
+
+
+## Zero-Knowledge Proofs for Click Verification
+
+We have integrated zero-knowledge proofs using Circom to verify the number of clicks on your campaigns. This allows us to calculate engagement accurately while ensuring privacy and security.
+
 # Contributing
 
 We welcome contributions to Adbase! If you'd like to contribute, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
